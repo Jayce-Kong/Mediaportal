@@ -5,6 +5,7 @@ import { NotFound } from "./pages/NotFound";
 import { ShortVideo } from "./pages/products/ShortVideo";
 import { Live } from "./pages/products/Live";
 import { Multimodal } from "./pages/products/Multimodal";
+import { Transcoding } from "./pages/tools/Transcoding";
 
 export const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ export const router = createBrowserRouter([
       {
         path: "products/multimodal",
         Component: Multimodal,
+      },
+      {
+        path: "tools/transcoding",
+        Component: Transcoding,
       },
       {
         path: "*",

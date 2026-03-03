@@ -33,7 +33,14 @@ export const NAV_ITEMS: NavItem[] = [
   { name: "监控", id: "monitor", hasDropdown: true },
   { name: "研发日历", id: "calendar", hasDropdown: false },
   { name: "控制台", id: "console", hasDropdown: true },
-  { name: "常用工具", id: "tools", hasDropdown: true },
+  { 
+    name: "常用工具", 
+    id: "tools", 
+    hasDropdown: true,
+    subItems: [
+      { name: "媒体转码", path: "/tools/transcoding", icon: <Zap className="w-5 h-5 text-yellow-500" />, desc: "高效媒体格式转换与压缩" },
+    ]
+  },
 ];
 
 export const PRODUCTS: Product[] = [

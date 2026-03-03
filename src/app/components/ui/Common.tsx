@@ -9,7 +9,7 @@ interface ButtonProps {
   onClick?: () => void;
   href?: string;
   variant?: "primary" | "secondary" | "outline" | "ghost";
-  color?: "cyan" | "pink" | "orange" | "purple" | "white";
+  color?: "cyan" | "pink" | "orange" | "purple" | "white" | "blue";
   className?: string;
   icon?: boolean;
 }
@@ -31,28 +31,32 @@ export function Button({
       pink: "bg-pink-500 text-white hover:bg-pink-600 shadow-xl shadow-pink-500/20",
       orange: "bg-orange-500 text-white hover:bg-orange-600 shadow-xl shadow-orange-500/30",
       purple: "bg-purple-500 text-white hover:bg-purple-600 shadow-xl shadow-purple-500/20",
-      white: "bg-white text-black hover:bg-gray-200 shadow-xl shadow-white/10"
+      white: "bg-white text-black hover:bg-gray-200 shadow-xl shadow-white/10",
+      blue: "bg-[#A5C3F5] text-black hover:bg-[#8FB3EF] shadow-xl shadow-blue-500/10"
     },
     outline: {
       cyan: "border border-cyan-500/30 text-cyan-400 hover:bg-cyan-500/10",
       pink: "border border-pink-500/30 text-pink-400 hover:bg-pink-500/10",
       orange: "border border-orange-500/30 text-orange-400 hover:bg-orange-500/10",
       purple: "border border-purple-500/30 text-purple-400 hover:bg-purple-500/10",
-      white: "border border-white/20 text-white hover:bg-white/10"
+      white: "border border-white/20 text-white hover:bg-white/10",
+      blue: "border border-[#A5C3F5]/30 text-[#A5C3F5] hover:bg-[#A5C3F5]/10"
     },
     secondary: {
       cyan: "bg-cyan-500/10 text-cyan-400 hover:bg-cyan-500/20",
       pink: "bg-pink-500/10 text-pink-400 hover:bg-pink-500/20",
       orange: "bg-orange-500/10 text-orange-400 hover:bg-orange-500/20",
       purple: "bg-purple-500/10 text-purple-400 hover:bg-purple-500/20",
-      white: "bg-white/10 text-white hover:bg-white/20"
+      white: "bg-white/10 text-white hover:bg-white/20",
+      blue: "bg-[#A5C3F5]/10 text-[#A5C3F5] hover:bg-[#A5C3F5]/20"
     },
     ghost: {
       cyan: "text-cyan-400 hover:text-cyan-300",
       pink: "text-pink-400 hover:text-pink-300",
       orange: "text-orange-400 hover:text-orange-300",
       purple: "text-purple-400 hover:text-purple-300",
-      white: "text-white hover:text-gray-300"
+      white: "text-white hover:text-gray-300",
+      blue: "text-[#A5C3F5] hover:text-[#8FB3EF]"
     }
   };
 
@@ -115,7 +119,7 @@ export function ProductCard({ product, index }: { product: Product, index: numbe
       <Button 
         variant="ghost" 
         color={product.color as any} 
-        href={product.path}
+        href="https://afts.alipay.com/afts/configuration/create"
         icon 
         className="!px-0 !justify-start hover:gap-4 transition-all"
       >
