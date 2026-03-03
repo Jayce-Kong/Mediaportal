@@ -1,5 +1,7 @@
+import React from "react";
 import { motion } from "motion/react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { Button } from "./ui/Common";
 
 export function Hero() {
   const unsplashImageUrl = "https://images.unsplash.com/photo-1750233894598-6b7db500a3e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aWRlbyUyMG1lZGlhJTIwcGVyc29uJTIwcGhvbmUlMjBwbGF5YmFjayUyMHNjcmVlbiUyMHN0cmVhbWluZ3xlbnwxfHx8fDE3NzI0MjMwNzd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
@@ -25,17 +27,12 @@ export function Hero() {
               MEDIA PORTAL 是由音视频团队构建的音视频研发运维平台，旨在为音视频的业务服务、资源控制等提供统一的集成门户，让研发更加简单、高效。
             </p>
             <div className="flex flex-wrap gap-4 pt-8">
-              <button className="px-10 py-3 rounded bg-cyan-500 text-white font-bold text-lg hover:bg-cyan-600 transition-all hover:scale-105 active:scale-95 shadow-lg shadow-cyan-500/30 cursor-pointer">
+              <Button color="cyan" href="https://afts.alipay.com/afts/configuration/create">
                 快速接入
-              </button>
-              <a 
-                href="https://afts.alipay.com/afts/home"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-10 py-3 rounded border border-white/30 text-white font-bold text-lg hover:bg-white/10 transition-all hover:scale-105 active:scale-95 cursor-pointer flex items-center justify-center"
-              >
+              </Button>
+              <Button variant="outline" color="white" href="https://afts.alipay.com/afts/home">
                 我们的团队
-              </a>
+              </Button>
             </div>
           </div>
         </motion.div>
@@ -55,7 +52,7 @@ export function Hero() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
             
-            {/* Play Button Overlay Overlay */}
+            {/* Play Button Overlay */}
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                <div className="w-20 h-20 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30">
                   <div className="w-0 h-0 border-t-[15px] border-t-transparent border-l-[25px] border-l-white border-b-[15px] border-b-transparent ml-2"></div>

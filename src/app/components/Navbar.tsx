@@ -1,27 +1,11 @@
-import { Play, Search, Globe, ChevronDown, Film, Radio, Cpu } from "lucide-react";
+import React, { useState } from "react";
+import { Play, Search, Globe, ChevronDown } from "lucide-react";
 import { Link } from "react-router";
 import { motion, AnimatePresence } from "motion/react";
-import { useState } from "react";
+import { NAV_ITEMS } from "../constants/data";
 
 export function Navbar() {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
-
-  const navItems = [
-    { 
-      name: "产品介绍", 
-      id: "products",
-      hasDropdown: true,
-      subItems: [
-        { name: "短视频", path: "/products/short-video", icon: <Film className="w-5 h-5 text-pink-500" />, desc: "极速采集与智能云剪辑" },
-        { name: "直播", path: "/products/live", icon: <Radio className="w-5 h-5 text-orange-500" />, desc: "全球低延迟互动直播" },
-        { name: "多模态", path: "/products/multimodal", icon: <Cpu className="w-5 h-5 text-cyan-500" />, desc: "AI 驱动的跨模态内容理解" },
-      ]
-    },
-    { name: "监控", id: "monitor", hasDropdown: true },
-    { name: "研发日历", id: "calendar", hasDropdown: false },
-    { name: "控制台", id: "console", hasDropdown: true },
-    { name: "常用工具", id: "tools", hasDropdown: true },
-  ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
@@ -39,7 +23,7 @@ export function Navbar() {
 
           {/* Nav Links */}
           <div className="hidden lg:flex items-center gap-8 h-16">
-            {navItems.map((item) => (
+            {NAV_ITEMS.map((item) => (
               <div
                 key={item.id}
                 className="relative h-full flex items-center gap-1 text-sm font-medium text-gray-300 hover:text-white transition-colors cursor-pointer"

@@ -1,7 +1,7 @@
 
-  # Untitled
+  # MediaPortal
 
-  This is a code bundle for Untitled. The original project is available at https://www.figma.com/design/3Mf9tfAhEn75UusI3ifPOI/Untitled.
+  This is a code bundle for MediaPortal. The original project is available at https://www.figma.com/design/3Mf9tfAhEn75UusI3ifPOI/MediaPortal.
 
   ## Running the code
 
