@@ -7,7 +7,7 @@ export function Hero() {
   const unsplashImageUrl = "https://images.unsplash.com/photo-1750233894598-6b7db500a3e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aWRlbyUyMG1lZGlhJTIwcGVyc29uJTIwcGhvbmUlMjBwbGF5YmFjayUyMHNjcmVlbiUyMHN0cmVhbWluZ3xlbnwxfHx8fDE3NzI0MjMwNzd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
 
   return (
-    <section className="relative min-h-[90vh] pt-16 flex items-center overflow-hidden bg-black">
+    <section className="relative min-h-[60vh] pt-4 flex items-center overflow-hidden bg-black">
       <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Side Content */}
         <motion.div 

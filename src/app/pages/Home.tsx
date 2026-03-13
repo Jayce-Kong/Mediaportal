@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import { Hero } from "../components/Hero";
+import { AIInputSection } from "../components/AIInputSection";
 import { Container, SectionTitle } from "../components/ui/Layout";
 import { ProductCard, Button } from "../components/ui/Common";
 import { PRODUCTS, FEATURES } from "../constants/data";
@@ -8,6 +9,9 @@ import { PRODUCTS, FEATURES } from "../constants/data";
 export function Home() {
   return (
     <div className="pb-24">
+      {/* AI Search Section */}
+      <AIInputSection />
+
       {/* Hero Section */}
       <Hero />
 

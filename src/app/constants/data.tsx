@@ -14,7 +14,8 @@ import {
   MessageSquare,
   Search,
   Eye,
-  Settings
+  Settings,
+  Image
 } from "lucide-react";
 import { NavItem, Product, Feature, Advantage } from "../types";
 import React from "react";
@@ -39,6 +40,7 @@ export const NAV_ITEMS: NavItem[] = [
     hasDropdown: true,
     subItems: [
       { name: "媒体转码", path: "/tools/transcoding", icon: <Zap className="w-5 h-5 text-yellow-500" />, desc: "高效媒体格式转换与压缩" },
+      { name: "智能封面", path: "/tools/smart-cover", icon: <Image className="w-5 h-5 text-purple-500" />, desc: "AI 自动提取视频最佳封面" },
     ]
   },
 ];

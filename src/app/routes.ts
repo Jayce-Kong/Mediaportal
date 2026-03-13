@@ -6,6 +6,7 @@ import { ShortVideo } from "./pages/products/ShortVideo";
 import { Live } from "./pages/products/Live";
 import { Multimodal } from "./pages/products/Multimodal";
 import { Transcoding } from "./pages/tools/Transcoding";
+import { SmartCover } from "./pages/tools/SmartCover";
 
 export const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ export const router = createBrowserRouter([
       {
         path: "tools/transcoding",
         Component: Transcoding,
+      },
+      {
+        path: "tools/smart-cover",
+        Component: SmartCover,
       },
       {
         path: "*",
